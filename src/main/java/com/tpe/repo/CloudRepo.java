@@ -1,2 +1,11 @@
-package com.tpe.repo;public class CloudRepo {
+package com.tpe.repo;
+
+import com.tpe.domain.Course;
+
+public class CloudRepo implements Repo{
+
+    @Override
+    public void save(Course course) {
+        System.out.println(course.getName() + " dersi clouda kaydediliyor...");
+    }
 }

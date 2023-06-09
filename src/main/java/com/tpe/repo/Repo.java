@@ -1,2 +1,8 @@
-package com.tpe.repo;public interface Repo {
+package com.tpe.repo;
+
+import com.tpe.domain.Course;
+
+public interface Repo {
+
+    void save(Course course);
 }
